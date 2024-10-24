@@ -58,6 +58,24 @@
             white-space: nowrap;
         }
 
+        /* Media query for mobile view */
+        @media only screen and (max-width: 768px) {
+            #main-title {
+                font-size: 1.5rem; /* Reduce the font size for mobile screens */
+                white-space: normal; /* Allow text to wrap */
+                word-wrap: break-word; /* Break long words if necessary */
+            }
+
+            h1, h2 {
+                font-size: 2rem; /* Adjust heading font size for mobile */
+                text-align: center; /* Ensure it's centered */
+            }
+            
+            .hero-section {
+                padding: 20px; /* Reduce padding on mobile */
+            }
+        }
+
         #paragraphs {
             opacity: 0;
         }
