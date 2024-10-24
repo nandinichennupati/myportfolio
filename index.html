@@ -475,6 +475,26 @@
             window.open("https://drive.google.com/file/d/1X4Ei-QC2VeslGTe0-9uUui4b-CxKxUD-/view?usp=drivesdk", "_blank");
         }
 
+        
+        // Select all the links in the navbar
+        const navLinks = document.querySelectorAll('.navbar-collapse a');
+        
+        // Loop through each link and add an event listener
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Collapse the navbar when a link is clicked
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+
+                // If the navbar is open, trigger the click event on the toggler to close it
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                }
+            });
+        });
+   
+
+
         function showGsuDetails() {
             const gsuDetails = [
                 "Governors State University - University Park, Illinois",
