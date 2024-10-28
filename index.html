@@ -381,18 +381,7 @@
                             <h5 class="card-title experience-card" id="hsl-exp-title" onclick="showHslExpDetails()">Hindustan
                                 Shipyard LTD</h5>
                             <div id="hsl-exp-details" class="experience-details"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Experience 4: SWEDO - MAKE IT HAPPEN -->
-                <div class="col-md-4 mb-4">
-                    <div class="card bg-dark text-light">
-                        <img src="Images\Experience\SWEDO.png" class="card-img-top"
-                            alt="Co-Founder & Security Analyst">
-                        <div class="card-body">
-                            <h5 class="card-title experience-card" id="swe-exp-title" onclick="showSweExpDetails()">Swedo - Make It happen</h5>
-                            <div id="swe-exp-details" class="experience-details"></div>
-                        </div>
+                        </div>   
                     </div>
                 </div>
             </div>
@@ -619,7 +608,7 @@
 
         function showAitExpDetails() {
             const aitExpDetails = [
-            "Role: Security Analyst", "Location: North Carolina, USA", "Time Period: Dec 2022 - Present", "Responsibilities:", "• Conducted regular security checks, reducing risks across environments.", "• Automated security workflows, improving response speed.", "• Strengthened user access controls with multi-factor authentication.", "• Managed secure network setups for internal and client systems.", "• Ensured compliance with major data protection standards."
+            "Role: Security Analyst", "Location: North Carolina, USA", "Time Period: Dec 2023 - May 2024", "Responsibilities:", "• Conducted regular security checks, reducing risks across environments.", "• Automated security workflows, improving response speed.", "• Strengthened user access controls with multi-factor authentication.", "• Managed secure network setups for internal and client systems.", "• Ensured compliance with major data protection standards."
             ];
             const aitExpDetailsElement = document.getElementById("ait-exp-details");
             aitExpDetailsElement.innerHTML = "";
@@ -659,21 +648,8 @@
             });
         }
 
-        function showSweExpDetails() {
-            const sweExpDetails = [
-            "Role: Co-Founder & Security Analyst", "Location: Vijayawada, India", "Time Period: Apr 2017 - Mar 2019", "Responsibilities:", "• Built secure environments for clients with firewalls and access controls.", "• Regularly assessed and improved overall security posture."
-            ];
-            const sweExpDetailsElement = document.getElementById("swe-exp-details");
-            sweExpDetailsElement.innerHTML = "";
-            sweExpDetails.forEach((detail, index) => {
-                setTimeout(() => {
-                    sweExpDetailsElement.innerHTML += `<p>${detail}</p>`;
-                    sweExpDetailsElement.style.opacity = 1;
-                }, index * 100);
-            });
-        }
 
-        
+      
         document.addEventListener("DOMContentLoaded", function () {
             const title = ["Hello, Welcome to my Portfolio", "I'm NANDINI CHENNUPATI."];
             const titleElement = document.getElementById("main-title");
