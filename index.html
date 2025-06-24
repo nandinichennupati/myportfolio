@@ -239,10 +239,10 @@
                 <div class="col-md-8">
                     <div id="paragraphs">
                         <p><strong>
-                            I'm a Cybersecurity Analyst with over 3 years of experience keeping data and systems safe across industries like healthcare, defense, and IT. From vulnerability assessments to identity and access management, and securing cloud environments in AWS and Azure, I thrive on solving complex security challenges.
+                            I'm a Cybersecurity Analyst with over 3+ years of experience keeping data and systems safe across industries like healthcare, defense, and IT. From vulnerability assessments to identity and access management, and securing cloud environments in AWS and Azure, I thrive on solving complex security challenges.
                         </strong></p>
                         <p><strong>
-                            Whether it's cloud security, incident response, risk management, or compliance - I'm all about proactively safeguarding what matters most.
+                            Whether it's threat modeling, cloud security, incident response, risk management, or compliance - I'm all about proactively safeguarding what matters most.
                         </strong></p>
                         <p><strong>
                             I'm passionate about taking on roles where I can make a meaningful impact, expand my skills, and help organizations stay a step ahead of emerging threats. My goal is to create digital spaces that are not only safe and meet all requirements but are also strong enough to handle future challenges.
@@ -349,7 +349,18 @@
         <div class="container text-center">
             <h2>EXPERIENCE</h2>
             <div class="row justify-content-center mt-4">
-                <!-- Experience 1: Analyte IT Services -->
+                <!-- Experience 1: Abbott Laboratories -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-light">
+                        <img src="Images\Experience\al.jpg" class="card-img-top"
+                            alt="Sr Cybersecurity Specialist">
+                        <div class="card-body">
+                            <h5 class="card-title experience-card" id="al-exp-title" onclick="showAlExpDetails()">Abbott Laboratories</h5>
+                            <div id="al-exp-details" class="experience-details"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience 2: Analyte IT Services -->
                 <div class="col-md-4 mb-4">
                     <div class="card bg-dark text-light">
                         <img src="Images\Experience\AIT.png" class="card-img-top"
@@ -360,7 +371,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Experience 2: Cognizant Technological Solutions -->
+                <!-- Experience 3: Cognizant Technological Solutions -->
                 <div class="col-md-4 mb-4">
                     <div class="card bg-dark text-light">
                         <img src="Images\Experience\CTS.png" class="card-img-top"
@@ -372,14 +383,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- Experience 3: Hindustan Shipyard LTD -->
+                <!-- Experience 4: Hindustan Shipyard LTD -->
                 <div class="col-md-4 mb-4">
                     <div class="card bg-dark text-light">
-                        <img src="Images\Experience\HSL.png" class="card-img-top"
+                        <img src="Images\Experience\ssp.jpeg" class="card-img-top"
                             alt="Cyber Security Analyst Intern">
                         <div class="card-body">
-                            <h5 class="card-title experience-card" id="hsl-exp-title" onclick="showHslExpDetails()">Hindustan
-                                Shipyard LTD</h5>
+                            <h5 class="card-title experience-card" id="hsl-exp-title" onclick="showHslExpDetails()">SSPart Enterprise PVT LTD</h5>
                             <div id="hsl-exp-details" class="experience-details"></div>
                         </div>   
                     </div>
@@ -461,7 +471,7 @@
         }
 
         function downloadResume() {
-            window.open("https://drive.google.com/file/d/1YoHXXnqHqbnStVvdfzqNRw93er1CFDF3/view?usp=drivesdk", "_blank");
+            window.open("https://drive.google.com/file/d/1eJo6S5D19Mn6F4AG1Jxh5HnsgN0UkBdm/view?usp=drivesdk", "_blank");
         }
 
         
@@ -591,7 +601,7 @@
             });
         }
 
-        const technicalskills = ["• Operating Systems: Windows, LINUX, MacOS", "• Programming Languages: Python, SQL, JAVA, Ruby", "• SIEM Tools: Splunk, ArcSight, IBM QRadar, Google Chronicle", "• Vulnerability Management: Nessus, Qualys, OpenVAS", "• Penetration Testing: Metasploit, Burp Suite", "• Frameworks & Standards: MITRE ATT&CK, NIST, ISO 27001, OWASP Top 10, PCI-DSS, SOX", "• Network Security: Firewalls, IDS/IPS, Wireshark, Snort, Nmap, TCP/IP, OSI Model", "• Endpoint Security: Antivirus, Encryption, DLP, VPN", "• Identity and Access Management (IAM): Okta, Microsoft Active Directory", "• Cloud Security: Azure, AWS, Google Cloud", "• Scripting & Automation: Bash, PowerShell", "• Regulatory Compliance: GDPR, CCPA, HIPAA", "• Security Documentation: Incident Reports, Playbooks, Risk Assessments"];
+        const technicalskills = ["• Operating Systems: Windows, LINUX, MacOS", "• Programming Languages: Python, SQL, JAVA, Ruby", "• SIEM Tools: Splunk, ArcSight, IBM QRadar, Google Chronicle", "• Vulnerability Management: Veracode, Qualys, Prisma Cloud, Nucleus", "• Penetration Testing: Metasploit, Burp Suite", "• Frameworks & Standards: MITRE ATT&CK, NIST, ISO 27001, OWASP Top 10, PCI-DSS, SOX", "• Network Security: Firewalls, IDS/IPS, Wireshark, Snort, Nmap, TCP/IP, OSI Model", "• Endpoint Security: Antivirus, Encryption, DLP, VPN", "• Identity and Access Management (IAM): Okta, Microsoft Active Directory", "• Cloud Security: Azure, AWS, Google Cloud", "• Scripting & Automation: Bash, PowerShell", "• Regulatory Compliance: GDPR, CCPA, HIPAA", "• Security Documentation: Incident Reports, Playbooks, Risk Assessments"];
         const transferrableskills = ["• Problem-solving and analytical thinking", "• Strong communication and collaboration", "• Adaptable to new tools and technologies", "• Attention to detail and time management", "• Malware prevention and threat analysis", "• Risk assessment and management", "• Incident response and recovery strategies", "• Security policy development and implementation"];
         
 
@@ -606,9 +616,23 @@
             });
         }
 
+        function showAlExpDetails() {
+            const alExpDetails = [
+            "Role: Sr Cybersecurity Specialist", "Location: Abbott Park, USA", "Time Period: Feb 2025 - Present", "Responsibilities:", "• Led STRIDE threat modeling for APIs and cloud services.", "• Conducted SAST/SCA (Veracode), DAST (Qualys/Nucleus), and cloud vulnerability scans (Prisma Cloud).", "• Triaged vulnerabilities using CVSS, EPSS, CISA KEV; mapped risks to NIST CSF.", "• Tested MongoDB/cloud controls for PCI-DSS, HIPAA, HITRUST. Secured AWS (IAM, logging, Secret Manager), Kubernetes (EKS, RBAC, policies), and ESL logging flows. Validated WAF, sanitization, and secure coding.", "• Automated triage/reporting using Python. Maintained dashboards, DevSecOps checklist, and security metrics. Supported GitHub Advanced Security, Purple Team findings, and audit readiness."
+            ];
+            const alExpDetailsElement = document.getElementById("al-exp-details");
+            alExpDetailsElement.innerHTML = "";
+            alExpDetails.forEach((detail, index) => {
+                setTimeout(() => {
+                    alExpDetailsElement.innerHTML += `<p>${detail}</p>`;
+                    alExpDetailsElement.style.opacity = 1;
+                }, index * 100);
+            });
+        }
+
         function showAitExpDetails() {
             const aitExpDetails = [
-            "Role: Security Analyst", "Location: North Carolina, USA", "Time Period: Dec 2023 - Present", "Responsibilities:", "• Conducted regular security checks, reducing risks across environments.", "• Automated security workflows, improving response speed.", "• Strengthened user access controls with multi-factor authentication.", "• Managed secure network setups for internal and client systems.", "• Ensured compliance with major data protection standards."
+            "Role: Security Analyst", "Location: North Carolina, USA", "Time Period: Dec 2023 - Feb 2025", "Responsibilities:", "• Conducted regular security checks, reducing risks across environments.", "• Automated security workflows, improving response speed.", "• Strengthened user access controls with multi-factor authentication.", "• Managed secure network setups for internal and client systems.", "• Ensured compliance with major data protection standards.", "• Monitored security logs using Splunk; triaged IDS/IPS alerts and supported threat hunting.", "• Automated log reviews and access validation via PowerShell.", "• Led incident response and CSIRT activities. Ensured ISO 27001 compliance and authored enterprise security policies.", "• Deployed endpoint/DLP controls and supported audit prep."
             ];
             const aitExpDetailsElement = document.getElementById("ait-exp-details");
             aitExpDetailsElement.innerHTML = "";
@@ -622,7 +646,7 @@
 
         function showCtsExpDetails() {
             const ctsExpDetails = [
-            "Role: Security Analyst", "Location: Bangalore, India", "Time Period: Sep 2021 - Aug 2022", "Responsibilities:", "• Secured healthcare data by monitoring for network threats.", "• Improved incident tracking and threat response.", "• Delivered security training, cutting down phishing risks.", "• Helped align security practices with business needs."
+            "Role: Programmer Analyst Trainee", "Location: Bangalore, India", "Time Period: Sep 2021 - Aug 2022", "Responsibilities:", "• Secured healthcare data by monitoring for network threats.", "• Improved incident tracking and threat response.", "• Delivered security training, cutting down phishing risks.", "• Helped align security practices with business needs.", "• Investigated incidents, analyzed packet flows (OSI/TCP-IP), and validated firewall/network controls.", "• Performed vulnerability assessments and implemented Zero Trust.", "• Supported ISO/NIST-based policy development and internal audits.", "• Secured AWS/Azure environments and coordinated security incident escalations."
             ];
             const ctsExpDetailsElement = document.getElementById("cts-exp-details");
             ctsExpDetailsElement.innerHTML = "";
@@ -636,7 +660,7 @@
 
         function showHslExpDetails() {
             const hslExpDetails = [
-            "Role: Security Analyst Intern", "Location: Vizag, India", "Time Period: May 2019 - Jun 2020", "Responsibilities:", "• Identified security gaps in defense systems through audits.", "• Configured systems to prevent unauthorized access attempts.", "• Led efforts to comply with international security standards."
+            "Role: Security Analyst Intern", "Location: Hyderabad, India", "Time Period: Dec 2019 - Dec 2020", "Responsibilities:", "• Identified security gaps in defense systems through audits.", "• Configured systems to prevent unauthorized access attempts.", "• Led efforts to comply with international security standards.", "• Implemented endpoint protection, monitored alerts, and investigated incidents.", "• Assisted with security assessments, policy creation, and system hardening in alignment with standards."
             ];
             const hslExpDetailsElement = document.getElementById("hsl-exp-details");
             hslExpDetailsElement.innerHTML = "";
